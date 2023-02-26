@@ -1,0 +1,66 @@
+.join{
+    display: flex;
+    padding: 0 2rem;
+    gap: 10rem;
+}
+.leftt{
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+}
+.leftt>hr{
+    position: absolute;
+    width: 10.5rem;
+    border: 2px solid var(--orange);
+    border-radius: 20%;
+    margin: -10px 0;
+}
+
+.righte{
+    flex: 1;
+    display: flex;
+    justify-content: center;align-items: center;
+}
+.emailcontainer{
+    display: flex;
+    gap: 3rem;
+    background-color: gray;
+    padding: 1rem 2rem;
+}
+.emailcontainer>input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: var(--lightgray);
+}
+::placeholder{
+    color: var(--lightgray);
+}
+.btn-join{
+    background-color: var(--orange);
+    color: white;
+    cursor: pointer;
+}
+.btn-join:hover{
+    background-color: white;
+    color: orange;
+}
+
+
+/* ************RESPONSIVENESS************* */
+@media screen and (max-width:768px){
+    .join{
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .leftt{
+        font-size: x-large;
+        flex-direction: column;
+    }
+    .righte{
+        padding: 2rem;
+    }
+
+}

@@ -1,0 +1,115 @@
+.testimonial{
+    display: flex;
+    gap: 1rem;
+    padding: 0 2rem;
+}
+.leftt{
+    display: flex;
+    flex: 1;
+    gap: 2rem;
+    flex-direction: column;
+    text-transform: uppercase;
+    color: white;
+}
+.leftt>:nth-child(1){
+    color: var(--orange);
+    font-weight: bold;
+    font-size: 1rem;
+}
+.leftt>:nth-child(2),
+.leftt>:nth-child(3){
+    font-weight: bold;
+    font-size: 3rem;
+}
+.leftt>:nth-child(4){
+    font-size: 1rem;
+    text-transform: none;
+    text-align:justify;
+    
+    line-height: 40px;
+}
+.author{
+    font-size: 1rem;
+    text-transform:none;
+}
+.rightt{
+    flex: 1;
+    position: relative;
+}
+.rightt>img{
+    position: absolute;
+    width: 17rem;
+    height: 20rem;
+    object-fit: cover;
+    right: 8rem;
+    top: 2rem;
+}
+.rightt>:nth-child(1){
+    position: absolute;
+    width: 17rem;
+    height: 20rem;
+    border: 2px solid orange;
+    background-color: transparent;
+    right: 9rem;
+    top: 0.9rem;
+}
+.rightt>:nth-child(2){
+    position: absolute;
+    width: 17rem;
+    height: 19rem;
+    background: var(--planCard);
+    right: 7rem;
+    top: 4rem;
+}
+.arrows{
+    display: flex;
+    position: absolute;
+    bottom: 1rem;
+    gap: 1rem;
+    left: 3rem;
+}
+.arrows>i{
+    width: 1.5rem;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    padding: 0.5rem;
+    background-color: rgb(26, 26, 26);
+}
+
+
+
+
+/* ***********RESPONSIVENESS*************** */
+@media screen and (max-width: 768px) {
+
+    .testimonial{
+        flex-direction: column;
+    }
+    .left>:nth-child(2),
+    .left>:nth-child(3){
+        font-size: xx-large;
+    }
+    .rightt{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+    .rightt>div{
+        position: relative;
+        display: none;
+    }
+    .rightt>img{
+        top: 0;
+        right: 0;
+        position: relative;
+        align-self: center;
+    }
+    .rightt>:last-child{
+        display: block;bottom: 0;left: 0;
+    }
+
+
+}
